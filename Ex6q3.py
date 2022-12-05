@@ -20,8 +20,8 @@ def find_cycle_in_consumption_graph(allocation:list[list[float]]):
     # if not cycle in the graphG chake with nxNoCycle
     # print not cycle
     try:
-        cycle = list(nx.find_cycle(grapgG, orientation="ignore"))
-        print("Cycle Yes", cycle)
+        c = list(nx.find_cycle(grapgG, orientation="ignore"))
+        print("Cycle Yes", c)
 
     except nx.NetworkXNoCycle:
         print("Cycle No")
